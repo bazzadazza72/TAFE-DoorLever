@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>PHP and FORMS</title>
+		<style>
+			label {
+				width:80px;
+				float:left;
+				font-size:12px;
+				line-height:24px;
+				font-weight:bold;
+			}
+			input, textarea {
+				width:200px;
+				margin-bottom:5px;
+				line-height:18px;
+				padding:2px 5px;				
+				border-radius: 5px;
+				border:1px solid #CCC;
+			}
+			input[type=submit],
+			input[type=reset] {
+				width:100px;
+				margin-left:25px;
+				margin-bottom:5px;
+				margin-top:20px;
+				line-height:18px;
+				padding:2px 5px;
+				border-radius: 5px;
+				border:1px solid #CCC;
+				color:#fff;
+				background-color:#09F;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Enter your details into the form and when you are ready click the submit button</h1>
+		<form id="form1" name="form1" method="post" action="processform.php">
+			<label for="givenName">Given Name:</label><input name="givenName" id="givenName" type="text" /><br/>
+			<label for="familyName">Family Name:</label><input name="familyName" id="familyName" type="text" /><br/>
+            <label for="email">Email:</label><input name="email" id="email" type="email" value='username@domain.com'/><br/>
+            <label for="comments">Comments:</label><textarea name="comments" id="comments" rows="4" cols="20"></textarea><br/>
+			<input name="submit" type="submit" value="Submit"/>
+			<input type="reset" name="reset" value="Reset" title="Reset Form"/>
+		</form>
+	</body>
+</html>
