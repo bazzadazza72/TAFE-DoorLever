@@ -1,7 +1,7 @@
-/*
+<!--
 DOOR LEVER INVENTORY ASSIGNMENT - Main
 Developed by Bailey Camp on 26/10/2022
-*/
+-->
 
 <!DOCTYPE html>
 <html>
@@ -11,6 +11,15 @@ Developed by Bailey Camp on 26/10/2022
     </head>
     <body>
         <?php
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
+        echo "Hello, world!";
         echo "Hello, world!";
         ?>
     </body>
