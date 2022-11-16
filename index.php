@@ -25,12 +25,9 @@
                 echo "<p>Connected to SQL server</p>";
           
                 // Attempts to connect to the database, and if it fails, runs the code contained in 'createDB.php'
-                if(!mysqli_select_db($conn, "acmeprods"))
-                {
+                if(!mysqli_select_db($conn, "acmeprods")) {
                     include("./includes/createDB.php");
-                }
-                else
-                {
+                } else {
                     echo "<p>Connected to test DB</p>";
                 }
             }
