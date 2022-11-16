@@ -11,6 +11,7 @@
     </head>
     <body>
             <?php
+            // Declares the MySQL connection and the database name for later use
             $conn = @mysqli_connect("localhost:3306","root","");
             $dbName = "acmeprods";
     
@@ -24,7 +25,7 @@
                 echo "<p>Connected to SQL server</p>";
           
                 // Attempts to connect to the database, and if it fails, runs the code contained in 'createDB.php'
-                if(!mysqli_select_db($conn, $dbName))
+                if(!mysqli_select_db($conn, "acmeprods"))
                 {
                     include("./includes/createDB.php");
                 }
