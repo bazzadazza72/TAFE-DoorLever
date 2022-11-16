@@ -1,3 +1,7 @@
+<!--
+    DOOR LEVER INVENTORY ASSIGNMENT - createDB.php
+    Developed by Bailey Camp on 16/11/2022
+-->
 <?php
     // Declares the MySQL connection and the database name for later use
 	$conn = mysqli_connect("localhost:3306","root","");
