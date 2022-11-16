@@ -1,7 +1,7 @@
 <?php
     // Declares the MySQL connection and the database name for later use
 	$conn = mysqli_connect("localhost:3306","root","");
-    $dbName = "acmeprods";
+    //$dbName = "acmeprods";
 
 	// Checks if the connection to MySQL was successful
 	if (mysqli_connect_errno())
@@ -12,9 +12,9 @@
 	{
 		echo "<p>Connected to mysql</p>";
         // Creates the database and tables
-		$query="DROP DATABASE IF EXISTS " . $dbName . ";";
-        $query.="CREATE DATABASE " . $dbName . ";";
-        $query.="USE " . $dbName . ";";
+		$query="DROP DATABASE IF EXISTS acmeprods;";
+        $query.="CREATE DATABASE acmeprods;";
+        $query.="USE acmeprods;";
         $query.="CREATE TABLE IF NOT EXISTS products(id int auto_increment not null primary key, prodName varchar(30) not null, prodFinish varchar (30) not null, prodUsage varchar (30) not null, prodCost float(8,2) not null);";
 
 		if (mysqli_multi_query($conn,$query)) 
