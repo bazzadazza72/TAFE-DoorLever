@@ -12,7 +12,7 @@
     <body>
         <?php
             // Declares the MySQL connection and the database name for later use
-            $conn = @mysqli_connect("localhost:3306","root","test");
+            $conn = @mysqli_connect("localhost:3306","root","");
             //$dbName = "acmeprods";
             $errMessageDesc = "Hahaha you f*cked up!";
             $errMessageFinish = "Hahaha you f*cked up!";
