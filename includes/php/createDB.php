@@ -5,7 +5,6 @@
 <?php
     // Declares the MySQL connection and the database name for later use
 	$conn = mysqli_connect("localhost:3306","root","");
-    //$dbName = "acmeprods";
 
 	// Checks if the connection to MySQL was successful
 	if (mysqli_connect_errno())
