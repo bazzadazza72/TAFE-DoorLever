@@ -2,41 +2,24 @@
     DOOR LEVER INVENTORY ASSIGNMENT - index.php
     Developed by Bailey Camp on 26/10/2022
 -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Acme Hardware - Add Product</title>
-    </head>
-    <body>
-            <?php
-            
-            // Declares the MySQL connection and the database name for later use
-            $conn = @mysqli_connect("localhost:3306","root","");
-            //$dbName = "acmeprods";
-    
-            // Checks if the MySQL connection was successful
-            if (mysqli_connect_errno())
-            {
-                echo "<p>Failed to connect to MySQL: " . mysqli_connect_error() . "</p>";
-            }
-            else
-            {
-                echo "<p>Connected to SQL server</p>";
-          
-                // Attempts to connect to the database, and if it fails, runs the code contained in 'createDB.php'
-                if(!mysqli_select_db($conn, "acmeprods")) {
-                    include("./includes/createDB.php");
-                } else {
-                    echo "<p>Connected to test DB</p>";
-                }
-            }
-        ?>
-        <form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-			<label for="name">Product name: <input type="text" name="name" id="name" size="20" value="<?php echo $userName;?>"><span class="error">* <?php echo $errMessageName;?></span><br /><br /></label>
-			<label for="age">Product finish: <input type="text" name="age" id="age" size="20" value="<?php echo $userAge;?>"><span class="error">* <?php echo $errMessageAge;?></span><br /><br /></label>
-			<input type="submit" name="submit" value="Submit">
+	<head>
+		<meta charset="UTF-8">
+		<title>Acme Hardware - Login</title>
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
+	</head>
+	<body>
+		<h1 class="acmeTitle">Acme Hardware</h1>
+		<h3><i>Login</i></h3><br/>
+		<form id="form1" name="form1" method="post" action="processform.php">
+			<label for="prodName">Username:</label> <input name="userName" id="userName" type="text" /> *<br />
+			<label for="prodCost">Password:</label> <input name="password" id="password" type="password"> *</input><br /><br />
+			<input name="submit" type="submit" value="Submit"/>
+			<input type ="reset" name="reset" value="Clear" title="Reset Form"/>
 		</form>
-    </body>
+		<!--<p><i>Site written with </i>&#128151<i> by </i><a href="mailto:bailey.camp@student.tafesa.edu.au"><i>Bailey Camp</i></a></p>-->
+	</body>
 </html>
