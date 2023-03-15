@@ -37,7 +37,7 @@
             }
         ?>
         <form id="form1" name="form1" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
-			<label for="prodName">Product name:</label> <input name="prodName" id="prodName" type="text" /><br /><br />
+			<label for="prodName">Product name:</label> <input name="prodName" id="prodName" type="text"/><br /><br />
 			<label for="prodUsage">Product description:</label> <input name="prodUsage" id="prodUsage" type="text"/><br /><br />
 			<label for="prodCost">Product price:</label> <input name="prodCost" id="prodCost" type="text"></input><br /><br />
 			<label for="prodFinish">Product colour:</label> <input name="prodFinish" id="prodFinish" type="text" /><br /><br />
