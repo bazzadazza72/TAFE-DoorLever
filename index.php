@@ -1,6 +1,6 @@
 <!--
     DOOR LEVER INVENTORY ASSIGNMENT - index.php
-    Developed by Bailey Camp on 26/10/2022
+    Developed by Bailey Camp on 15/3/2023
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
 			<label for="username">Username:</label> <input name="userName" id="userName" type="text" /> *<br />
 			<label for="password">Password:</label> <input name="password" id="password" type="password"> *</input><br /><br />
 			<input name="submit" type="submit" value="Submit"/>
-			<input type ="reset" name="reset" value="Clear" title="Reset Form"/>
+			<input type="reset" name="reset" value="Clear" title="Reset Form"/>
 		</form>
 		<!--<p><i>Site written with </i>&#128151<i> by </i><a href="mailto:bailey.camp@student.tafesa.edu.au"><i>Bailey Camp</i></a></p>-->
 	</body>

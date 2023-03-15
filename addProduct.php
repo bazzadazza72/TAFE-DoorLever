@@ -1,6 +1,6 @@
 <!--
     DOOR LEVER INVENTORY ASSIGNMENT - addProduct.php
-    Developed by Bailey Camp on 26/10/2022
+    Developed by Bailey Camp on 15/3/2023
 -->
 
 <!DOCTYPE html>
