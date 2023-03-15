@@ -27,7 +27,7 @@
 				mysqli_next_result($conn);	
 			} while (mysqli_more_results($conn));
 		} else {
-			echo "<p>Error: " . mysqli_error($conn) ."</p>";
+			echo "<p>There was an internal error: " . mysqli_error($conn) ."</p>";
 		}
 	}
 ?>
