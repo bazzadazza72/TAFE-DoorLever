@@ -17,7 +17,7 @@
 		$query="DROP DATABASE IF EXISTS acme_products;";
         $query.="CREATE DATABASE acme_products;";
         $query.="USE acme_products;";
-        $query.="CREATE TABLE IF NOT EXISTS products(id int auto_increment not null primary key, prodName varchar(30) not null, prodFinish varchar (30) not null, prodUsage varchar (30) not null, prodCost float(8,2) not null);";
+        $query.="CREATE TABLE IF NOT EXISTS products(id int auto_increment not null primary key, prodName varchar(30) not null, prodFinish varchar (30) not null, prodUsage varchar (30) not null, prodCost float(8,2) not null, imagePath varchar(500) not null);";
 
 		if (mysqli_multi_query($conn,$query)) 
 		{
