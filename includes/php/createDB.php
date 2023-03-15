@@ -14,11 +14,11 @@
 	}
 	else
 	{
-		echo "<p>Connected to mysql</p>";
+		echo "<p>Connected to MySQL</p>";
         // Creates the database and tables
-		$query="DROP DATABASE IF EXISTS acmeprods;";
-        $query.="CREATE DATABASE acmeprods;";
-        $query.="USE acmeprods;";
+		$query="DROP DATABASE IF EXISTS acme_products;";
+        $query.="CREATE DATABASE acme_products;";
+        $query.="USE acme_products;";
         $query.="CREATE TABLE IF NOT EXISTS products(id int auto_increment not null primary key, prodName varchar(30) not null, prodFinish varchar (30) not null, prodUsage varchar (30) not null, prodCost float(8,2) not null);";
 
 		if (mysqli_multi_query($conn,$query)) 
