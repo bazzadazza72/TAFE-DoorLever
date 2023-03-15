@@ -11,9 +11,7 @@
 	if (mysqli_connect_errno())
 	{
 		echo "<p>Failed to connect to MySQL: " . mysqli_connect_error() . "</p>";
-	}
-	else
-	{
+	} else {
 		echo "<p>Connected to MySQL</p>";
         // Creates the database and tables
 		$query="DROP DATABASE IF EXISTS acme_products;";
@@ -25,13 +23,10 @@
 		{
             // Shows a message to the user stating the products database was created because it didn't exist
 			echo "<p>The products database doesn't exist and was created.</p>";
-			do
-			{
+			do {
 				mysqli_next_result($conn);	
 			} while (mysqli_more_results($conn));
-		}
-		else 
-		{
+		} else {
 			echo "<p>Error: " . mysqli_error($conn) ."</p>";
 		}
 	}
