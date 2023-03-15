@@ -14,9 +14,10 @@
 	<body>
 		<h1 class="acmeTitle">Acme Hardware</h1>
 		<h3><i>Login</i></h3><br/>
+		<h4>* - required field</h4>
 		<form id="form1" name="form1" method="post" action="processform.php">
-			<label for="prodName">Username:</label> <input name="userName" id="userName" type="text" /> *<br />
-			<label for="prodCost">Password:</label> <input name="password" id="password" type="password"> *</input><br /><br />
+			<label for="username">Username:</label> <input name="userName" id="userName" type="text" /> *<br />
+			<label for="password">Password:</label> <input name="password" id="password" type="password"> *</input><br /><br />
 			<input name="submit" type="submit" value="Submit"/>
 			<input type ="reset" name="reset" value="Clear" title="Reset Form"/>
 		</form>
