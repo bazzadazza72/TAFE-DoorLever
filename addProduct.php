@@ -40,6 +40,7 @@
             }
         ?>
         <h1 class="acmeTitle">Acme Hardware</h1>
+		<a href="./addProduct.php">Add Product</a> | <a href="./updateProduct.php">Update Product</a> | <a href="./deleteProduct.php">Delete Product</a>
 		<h3><i>Add Product</i></h3>
 		<h4>* - required field</h4>
         <form id="form1" name="form1" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
@@ -51,5 +52,6 @@
 			<input name="submit" type="submit" value="Submit"/>
 			<input type ="reset" name="reset" value ="Reset" title="Reset Form"/>
 		</form>
+        <a href="./index.php"><i>Log out</i></a>
     </body>
 </html>
