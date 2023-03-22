@@ -51,28 +51,28 @@
 					$nameErr = "Product name must not be blank.";
 					$invalidData = true;
 				} else {
-					$nameErr = "Product name must not be blank.";
+					$nameErr = "";
 				}
 
 				if ($prodUsage == ""){
 					$usageErr = "Product usage must not be blank.";
 					$invalidData = true;
 				} else {
-					$usageErr = "Product usage must not be blank.";
+					$usageErr = "";
 				}
 
                 if ($prodCost == ""){
 					$costErr = "Product cost must not be blank.";
 					$invalidData = true;
 				} else {
-					$costErr = "Product cost must not be blank.";
+					$costErr = "";
 				}
 
                 if ($prodFinish == ""){
 					$finishErr = "Product finish must not be blank.";
 					$invalidData = true;
 				} else {
-					$finishErr = "Product finish must not be blank.";
+					$finishErr = "";
 				}
 
 				if ($invalidData == false) {
