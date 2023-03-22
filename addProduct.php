@@ -8,6 +8,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Acme Hardware - Add Product</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans">
     </head>
     <body>
         <?php
@@ -26,16 +29,19 @@
             }
             else
             {
-                echo "<p>Connected to SQL server</p>";
+                // echo "<p>Connected to SQL server</p>";
           
                 // Attempts to connect to the database, and if it fails, runs the code contained in 'createDB.php'
                 if(!mysqli_select_db($conn, "acme_products")) {
                     include("./includes/createDB.php");
                 } else {
-                    echo "<p>Connected to test DB</p>";
+                    // echo "<p>Connected to test DB</p>";
                 }
             }
         ?>
+        <h1 class="acmeTitle">Acme Hardware</h1>
+		<h3><i>Add Product</i></h3>
+		<h4>* - required field</h4>
         <form id="form1" name="form1" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>>
 			<label for="prodName">Product name:</label> <input name="prodName" id="prodName" type="text"/><br /><br />
 			<label for="prodUsage">Product description:</label> <input name="prodUsage" id="prodUsage" type="text"/><br /><br />
