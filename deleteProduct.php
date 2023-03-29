@@ -34,11 +34,9 @@
 					$invalidData = true;
 				}
 				
-				if ($invalidData == true) {
-					$formResult = "Your deletion request was successful.";
-					exit();
+				if ($invalidData == false) {
+					include('./deleteproductfromdb.php');
 				}
-				
 			}
 
 			function checkInput($inputData) {
